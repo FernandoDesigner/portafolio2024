@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap");
+.sen-font {
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+  font-family: "Sen", sans-serif;
+}
+
+li::marker {
+  content: "";
+}
+
+a, a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+[class^=container__section] {
+  padding: 2em clamp(1em, 1em + 3vw, 8em);
+}
+
+.container__section {
+  min-height: 100vh;
+}
+
+.container__section-sm {
+  min-height: 90vh;
+}
+
+.--font-bold {
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1400px;
+}
+
+.--container-sm {
+  max-width: 1200px;
+}
+
+.--container-lg {
+  max-width: 1600px;
+}
+
+button {
+  position: relative;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+button:focus {
+  outline: none;
+}
+
+.header {
+  padding: 0 4.5em;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background-color: #000;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+.links li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.links li > a {
+  opacity: 0.65;
+  padding: 2em 1.5em;
+  transition: all 0.25s ease;
+}
+.links li > a:hover {
+  opacity: 1;
+}
+
+.container_info_grid {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  height: 80vh;
+  align-items: center;
+  padding: 0 3em;
+}
+
+.text-about {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.text-about h1 {
+  font-size: clamp(2em, 1.5em + 3vw, 4.0625em);
+}
+.text-about h3 {
+  font-size: clamp(0.8em, 1em + 0.85vw, 2.0625em);
+  color: hsla(0, 0%, 100%, 0.5);
+  line-height: 1.4;
+}
+
+.wrapp {
+  position: absolute;
+  left: auto;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  z-index: -1;
+  width: 65vw;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#181823), to(#181823));
+  background-image: linear-gradient(180deg, #181823, #181823);
+}
+
+.container__experencie {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.title__block span {
+  margin-bottom: 8px;
+  color: #8491a0;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.title__block h1 {
+  font-size: clamp(1.7em, 1.5em + 2vw, 3.5em);
+  padding-top: 1rem;
+}
+.title__block .subtitle-block {
+  font-size: 0.95em;
+  padding-top: 1rem;
+  color: rgba(255, 255, 255, 0.7607843137);
+  font-style: italic;
+}
+
+.experienceLab {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container__exp {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.date {
+  color: #8491a0;
+  font-weight: 700;
+  font-size: clamp(2em, 1.8em + 3vw, 8em);
+}
+
+.nombre_empresa {
+  font-weight: 800;
+  font-size: 1.5em;
+}
+.nombre_empresa.--green {
+  color: #3cc74e;
+}
+.nombre_empresa.--blue {
+  color: #609bff;
+}
+.nombre_empresa.--pink {
+  color: #e95d90;
+}
+
+.tab__section {
+  margin: 3rem 0;
+}
+
+.tabcontent {
+  display: none;
+}
+
+.tab-btn {
+  padding: 12px 16px;
+  border: 1px solid #5221e6;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+}
+.tab-btn::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: width 0.3s ease-in-out;
+  background-color: #5221e6;
+}
+.tab-btn:focus::before, .tab-btn.active::before {
+  width: 100%;
+}
+.tab-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 10px;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+}
+.screen img {
+  width: 100%;
+  height: 100%;
+}
+
+.description_tab {
+  padding: 2em 0;
+}
+.description_tab h2 {
+  font-size: 2.5em;
+  padding-bottom: 1rem;
+}
+.description_tab p {
+  color: rgba(255, 255, 255, 0.7607843137);
+}
+
+/*# sourceMappingURL=style.css.map */

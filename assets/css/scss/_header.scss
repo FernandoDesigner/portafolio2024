@@ -1,0 +1,33 @@
+.header {
+    padding: 0 4.5em;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: $black-color;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+
+    li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        >a {
+            opacity: .65;
+            padding: 2em 1.5em;
+            transition: all .25s ease;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+
+}

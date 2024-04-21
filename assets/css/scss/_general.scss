@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
+.sen-font {
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    background-color: $black-color;
+    color: $primary-color;
+    font-family: "Sen", sans-serif;
+
+}
+
+li{
+    &::marker{
+        content: "";
+    }
+}
+a, a:visited{
+    color: $primary-color;
+    text-decoration: none;
+}
+[class^="container__section"]{
+    padding: 2em clamp(1em, 1em + 3vw, 8em);
+}
+.container__section{
+    min-height: 100vh;
+}
+.container__section-sm{
+    min-height: 90vh;
+}
+
+.--font-bold {
+    font-weight: 600;
+}
+
+.container {
+    max-width: 1400px;
+}
+
+.--container-sm {
+    max-width: 1200px;
+}
+
+.--container-lg {
+    max-width: 1600px;
+}
+button{
+    position: relative;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    &:focus{
+        outline: none;
+    }
+}
