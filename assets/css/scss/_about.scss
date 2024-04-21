@@ -38,7 +38,7 @@
     height: 100%;
 }
 .screen span {
-    font-size: 2em;
+    font-size: clamp(1.5em, .3em + 2vw, 2em);
     text-align: center;
     display: block;
     padding: 2rem 0;
