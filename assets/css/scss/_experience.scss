@@ -131,11 +131,15 @@
 .screen {
     height: 100%;
     overflow: hidden;
-    width: clamp(40%, 300px + 3vw, 100%);
+    width: 100%;
+    max-width: 1300px;
+    // width: clamp(40%, 300px + 3vw, 100%);
     img{
         width: 100%;
         height: 100%;
-        aspect-ratio: 3 / 2;
+        object-fit: contain;
+        // aspect-ratio: 3 / 2;
+        max-width: 850px;
     }
 }
 .description_tab{
@@ -147,4 +151,8 @@
     p{
         color: #ffffffc2;
     }
+}
+.--flx-center .screen{
+    display: flex;
+    justify-content: center;
 }
